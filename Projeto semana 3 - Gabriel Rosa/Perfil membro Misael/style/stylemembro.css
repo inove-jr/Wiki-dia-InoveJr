@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --background-color: #fff;
+    --secondary-color: #a2a9b1;
+    --back-color: #f8f9fa;
+    --text-color: #202122;
+    --cor-footer: #54595d;
+    --link-color: #0645ad;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-family: 'Times New Roman', 'Source Serif 4', serif; 
+
+}
+
+h2, h3 {
+    font-family: 'Merriweather', 'Times', serif;
+    color: #000000;
+}
+
+/* Inicio do header */
+.cabecalho { 
+    display: flex;
+    min-height: 3.125rem;
+    min-width: 18.75rem;
+    max-width: 99.75rem;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+}
+
+.logo { /* Logo (Canto sup-esquerdo) */
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.globo-wikipedia {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.logo-textos {
+    display: flex;
+    flex-direction: column; /* Wordmark em cima da tagline */
+    align-items: flex-start;
+}
+
+.wordmark {
+    height: 20px;
+}
+
+.tagline {
+    height: 13px;
+    margin-top: 4px; /* Pequeno espaçamento entre wordmark e tagline */
+    margin-left: 2px;
+}
+
+/* Barra de busca */
+.busca-form {
+    margin: 0 30px;
+    justify-content: flex-start;
+    display: flex;
+    flex-grow: 1; /* Faz a barra tentar ocupar o espaço vazio*/
+    max-width: 500px;
+}
+
+.campo-de-busca {
+    padding: 8px 12px;
+    border: 1px solid var(--secondary-color);
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.busca-btn {
+    padding: 8px 15px;
+    background-color: var(--back-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.busca-btn:hover {
+    background-color: #eaecf0;
+}
+
+/* Links do header (Canto sup-direito)*/
+.usuario-links {
+    margin-left: auto;
+}
+
+.usuario-links ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+    gap: 15px;
+}
+
+.usuario-links a {
+    font-size: 0.875rem;
+}
+
+.usuario-links a:hover {
+    color: #05337e;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px; /* Limita a largura */
+    margin: auto; /* Centraliza a página na tela */
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.infobox-container {
+    border: 1px solid #a2a9b1; /* Cria a borda cinza em volta de toda a caixa */   
+    background-color: #f8f9fa; /* Deixa o fundo com aquele cinza clarinho da Wiki */
+    margin: 0.5em 0 0.5em 1em; 
+    float: right;              /* Joga a caixa inteira para o canto direito da página */
+    clear: right;              /* Impede que outras coisas flutuantes grudem nela */
+    font-size: 88%;            /* Deixa a letra um pouco menor que o texto do artigo */
+    line-height: 1.5em;        /* Dá um espaço confortável entre as linhas de texto */
+    width: 22em;               /* Trava a largura da caixa para não ficar esticando */
+}
+
+.infobox-imagem {
+    text-align: center;
+}
+
+.misael-foto {
+    width: 220px;
+    height: auto; /* Mantém a proporção correta */
+}
+
+/* Linha abaixo dos títulos */
+h1, h2 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none; /* Tira o sublinhado */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.rodape {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--cor-footer); /* Cinza mais escuro */
+}
